@@ -1,0 +1,78 @@
+/* Estilos dos botões de redes sociais */
+.redes-sociais {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; /* Criar uma linha com os botões */
+  justify-content: center; /* Centralizar horizontalmente os botões */
+}
+
+.botao-redondo {
+  display: flex; /* Use flexbox para centralizar o ícone vertical e horizontalmente */
+  align-items: center; /* Centralize verticalmente */
+  justify-content: center; /* Centralize horizontalmente */
+  width: 110px; /* Reduzindo o tamanho do botão para 50px */
+  height: 110px; /* Reduzindo o tamanho do botão para 50px */
+  border-radius: 50%;
+  margin: 10px; /* Reduzindo o espaço entre os botões */
+  overflow: hidden;
+  background-color: #ffffff; /* Cor de fundo do botão */
+  transition: all 0.3s ease; /* Adicione a transição para animação */
+}
+
+.botao-redondo img {
+  width: 80%; /* Reduzindo o tamanho do ícone para 80% do botão */
+  height: 80%; /* Reduzindo o tamanho do ícone para 80% do botão */
+  object-fit: contain; /* Certifique-se de que o ícone não fique esticado */
+}
+
+/* Adicione estilos personalizados para os ícones das redes sociais, conforme necessário */
+.botao-twitter img {
+  background-color: transparent; /* Remova a cor de fundo do ícone do Twitter */
+}
+
+.botao-instagram {
+  background-color: #ffffff; /* Cor de fundo do botão do Instagram */
+}
+
+.botao-linkedin {
+  background-color: #ffffff; /* Cor de fundo do botão do LinkedIn */
+}
+
+/* Estilos do fundo da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("irelia.jpg"); /* Substitua "sua-imagem-de-fundo.jpg" pelo caminho correto da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Adicione a animação ao passar o cursor sobre os botões */
+.botao-redondo:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+  /* Você pode adicionar outras alterações de estilo aqui, se desejar */
+}
+
+/* Estilos para o texto "AKIRA'S DOMAIN AUTHORITY" abaixo dos botões */
+.texto-akira {
+  font-family: 'Akira', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff; /* Cor do texto */
+  margin-top: 430px; /* Espaçamento acima do texto */
+}
+
+/* Importar a fonte personalizada */
+@font-face {
+  font-family: 'Akira';
+  src: url('caminho/para/sua-fonte/AkiraFont.woff2') format('woff2'), /* Substitua o caminho correto para o arquivo .woff2 da fonte */
+       url('caminho/para/sua-fonte/AkiraFont.woff') format('woff'); /* Substitua o caminho correto para o arquivo .woff da fonte */
+}
+/* Importar a fonte "Press Start 2P" */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
